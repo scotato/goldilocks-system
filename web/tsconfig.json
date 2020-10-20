@@ -13,7 +13,11 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "lib": ["es2015", "es2016", "dom"],
+    "types": ["node"],
     "baseUrl": ".",
-    "types": ["node"]
+    "paths": {
+      "@components/*": ["../src/components/*"],
+      "*": ["src/*", "node_modules/*"]
+    },
   }
 }
