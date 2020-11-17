@@ -29,5 +29,5 @@ export const Button = styled.button`
   opacity: 1;
   background: transparent;
   line-height: 1;
-  color: ${props => props.theme.colors.main};
+  color: ${({ theme }) => theme?.colors?.main ?? 'red'};
 `;
